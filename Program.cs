@@ -13,7 +13,7 @@ internal class FileImporter
       var listBox = new List<string>();
       //"C:\test"以下のファイルをすべて取得する
       System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(@"ここに書き込むテクスチャを入れておくフォルダの絶対パスを貼る");
-      //System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(@"C:\Users\user\Desktop\Texture");
+      //System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(@"C:\Users\user\Desktop\Texture\File");
       IEnumerable<System.IO.FileInfo> files =
       di.EnumerateFiles("*", System.IO.SearchOption.AllDirectories);
       string fileName = "";
@@ -26,13 +26,14 @@ internal class FileImporter
             //リストにファイル名を追加
             result.Add(f.FullName);
 
-            //File\で始まる部分から切り取り
+            //テクスチャを入れているフォルダ名を書く
             fileName = result[i].Substring(result[i].IndexOf("File"));
 
             //先頭5文字(File\)以降を切り取り = ファイル名.png
+            //ファイル名+1の数値にする
             fileName =  fileName.Substring(5);
 
-            //末端4文字(.pmg)を削除 = ファイル名
+            //末端4文字(.png)を削除 = ファイル名
             fileName = fileName.Substring(0, fileName.Length - 4);
 
             result.Remove(f.FullName);
