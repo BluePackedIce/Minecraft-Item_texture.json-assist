@@ -1,0 +1,2 @@
+# Minecraft-Item_texture.json-assist
+大量のアイテムファイルをitem_textureに登録する作業を少し楽にできます
