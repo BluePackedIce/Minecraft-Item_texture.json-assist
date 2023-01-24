@@ -25,3 +25,4 @@ Program.csの15行目に作成したフォルダの絶対パスを指定しま�
 出力された文字はitem_texture.jsonに自動で加えられないため手動で書き込む必要があります。  
 
 出力されるテクスチャパスを変える場合Program.csの58行目を変える事でパスを変える事ができます  
+![a](https://user-images.githubusercontent.com/104478675/214206737-03b31f50-ba7b-4438-9866-4feca2aee004.png)
