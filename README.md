@@ -1,7 +1,7 @@
 # Minecraft-Item_texture.json-assist
 大量のアイテムファイルをitem_textureに登録する作業を少し楽にできます
 
-##●使い方
+## ●使い方
 VisualStudioで新しいプロジェクトを作成しC#コンソールアプリを選択します  
 プロジェクト名は任意  
 フレームワークを.NET6.0にして作成します。  
