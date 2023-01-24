@@ -53,7 +53,7 @@ internal class FileImporter
         foreach (string list in listbox)
         {
             //ここで出力されるファイルパスを指定する
-            /*{listbox[i]が出力されるファイル名
+            /*{listbox[i]が出力されるファイル名*/
             Console.WriteLine($"        \"{listbox[i]}\":{{\"textures\":\"textures/items/{listbox[i]}\"}},");
             i++;
         }
